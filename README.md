@@ -91,7 +91,7 @@ console.log(await res.json());
 ```
 
 #### Graphical user interface
-The GUI code is in a [separate repository](https://github.com/argosopentech/argos-translate-gui).
+The GUI code is in a [separate repository](https://github.com/Novixx-Systems/argos-translate-gui).
 
 ![Screenshot](/img/Screenshot.png)
 ![Screenshot2](/img/Screenshot2.png)
