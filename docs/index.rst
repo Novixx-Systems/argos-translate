@@ -19,12 +19,14 @@ Python Example
 --------------
 .. code-block:: python
 
-        import argostranslate.package, argostranslate.translate
+        import argostranslate.package
+        import argostranslate.translate
 
         from_code = "en"
         to_code = "es"
 
         # Download and install Argos Translate package
+        argostranslate.package.update_package_index()
         available_packages = argostranslate.package.get_available_packages()
         available_package = list(
             filter(
@@ -47,10 +49,22 @@ Python Example
         print(translatedText)
         # '¡Hola Mundo!'
 
+Command Line Interface Example
+--------------
+.. code-block:: bash
+        argospm update
+        argospm install translate-en_de
+        argos-translate --from en --to de "Hello World!"
+        # Hallo Welt!
+
+
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   :ref:`genindex`
+   source/settings
    source/cli
    source/gui
 
